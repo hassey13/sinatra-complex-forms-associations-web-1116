@@ -1,1 +1,15 @@
-index.erb
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <ol>
+        <% @pets.each do |pet| %>
+            <li><a href="/pets/<%= pet.id %>"><%= pet.name %></a></li>
+            <br>
+        <% end %>
+        </ol>
+    </body>
+</html>
